@@ -1,0 +1,153 @@
+is_global = true
+build_property.TargetFramework = net7.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = Projekt
+build_property.RootNamespace = Projekt
+build_property.ProjectDir = E:\C#\Projekt\Projekt\
+build_property.RazorLangVersion = 7.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = E:\C#\Projekt\Projekt
+build_property._RazorSourceGeneratorDebug = 
+
+[E:/C\#/Projekt/Projekt/Views/Danie/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGFuaWVcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/C\#/Projekt/Projekt/Views/Danie/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGFuaWVcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/C\#/Projekt/Projekt/Views/Danie/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGFuaWVcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/C\#/Projekt/Projekt/Views/Danie/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGFuaWVcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/C\#/Projekt/Projekt/Views/Danie/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGFuaWVcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/C\#/Projekt/Projekt/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/C\#/Projekt/Projekt/Views/Home/LoggedIn.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxMb2dnZWRJbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/C\#/Projekt/Projekt/Views/Home/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxMb2dpbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/C\#/Projekt/Projekt/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/C\#/Projekt/Projekt/Views/PlanDnia/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGxhbkRuaWFcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/C\#/Projekt/Projekt/Views/PlanDnia/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGxhbkRuaWFcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/C\#/Projekt/Projekt/Views/PlanDnia/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGxhbkRuaWFcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/C\#/Projekt/Projekt/Views/PlanDnia/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGxhbkRuaWFcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/C\#/Projekt/Projekt/Views/PlanDnia/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGxhbkRuaWFcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/C\#/Projekt/Projekt/Views/Produkt/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVrdFxDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/C\#/Projekt/Projekt/Views/Produkt/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVrdFxEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/C\#/Projekt/Projekt/Views/Produkt/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVrdFxEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/C\#/Projekt/Projekt/Views/Produkt/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVrdFxFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/C\#/Projekt/Projekt/Views/Produkt/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVrdFxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/C\#/Projekt/Projekt/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/C\#/Projekt/Projekt/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/C\#/Projekt/Projekt/Views/SkladDania/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2tsYWREYW5pYVxDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/C\#/Projekt/Projekt/Views/SkladDania/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2tsYWREYW5pYVxEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/C\#/Projekt/Projekt/Views/SkladDania/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2tsYWREYW5pYVxEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/C\#/Projekt/Projekt/Views/SkladDania/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2tsYWREYW5pYVxFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/C\#/Projekt/Projekt/Views/SkladDania/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2tsYWREYW5pYVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/C\#/Projekt/Projekt/Views/Uzytkownik/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXp5dGtvd25pa1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/C\#/Projekt/Projekt/Views/Uzytkownik/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXp5dGtvd25pa1xEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/C\#/Projekt/Projekt/Views/Uzytkownik/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXp5dGtvd25pa1xEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/C\#/Projekt/Projekt/Views/Uzytkownik/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXp5dGtvd25pa1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/C\#/Projekt/Projekt/Views/Uzytkownik/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXp5dGtvd25pa1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/C\#/Projekt/Projekt/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/C\#/Projekt/Projekt/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/C\#/Projekt/Projekt/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-pwdsqgl44g
