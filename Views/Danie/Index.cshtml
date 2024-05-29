@@ -1,0 +1,74 @@
+@model IEnumerable<AuthenticationApp.Models.DanieViewModel>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Dania</h1>
+
+@if (Context.Session.GetString("Admin") != null)
+{
+    <p>
+        <a asp-action="Create">Stwórz nowe danie</a>
+    </p>
+}
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Danie.Nazwa)
+            </th>
+            <th>
+                <a asp-action="Index" asp-route-sortOrder="@ViewBag.KalorycznoscSortParm">
+                    @Html.DisplayNameFor(model => model.Kalorycznosc)
+                </a>
+            </th>
+            <th>
+                <a asp-action="Index" asp-route-sortOrder="@ViewBag.WeglowodanySortParm">
+                    @Html.DisplayNameFor(model => model.Weglowodany)
+                </a>
+            </th>
+            <th>
+                <a asp-action="Index" asp-route-sortOrder="@ViewBag.TluszczeSortParm">
+                    @Html.DisplayNameFor(model => model.Tluszcze)
+                </a>
+            </th>
+            <th>
+                <a asp-action="Index" asp-route-sortOrder="@ViewBag.BialkoSortParm">
+                    @Html.DisplayNameFor(model => model.Bialko)
+                </a>
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Danie.Nazwa)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Kalorycznosc)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Weglowodany)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Tluszcze)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Bialko)
+            </td>
+            <td>
+                @if (Context.Session.GetString("Admin") != null)
+                {
+                    <a asp-action="Edit" asp-route-id="@item.Danie.DanieId">Zmień nazwe</a>
+                    <a asp-action="Delete" asp-route-id="@item.Danie.DanieId">Delete</a>
+                }
+                <a asp-action="Details" asp-route-id="@item.Danie.DanieId">Details</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

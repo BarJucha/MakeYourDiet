@@ -1,0 +1,46 @@
+@model IEnumerable<AuthenticationApp.Models.PlanDniaGroupViewModel>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Plany dnia</h1>
+
+<p>
+    <a asp-action="Create">Create</a>
+</p>
+
+@foreach (var group in Model)
+{
+    <h2>@group.Date.ToString("dd.MM.yyyy")</h2>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => group.Plany.First().DataDnia)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => group.Plany.First().Danie.Nazwa)
+                </th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in group.Plany)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.DataDnia)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Danie.Nazwa)
+                    </td>
+                    <td>
+                        <a asp-action="Edit" asp-route-id="@item.PlanDniaId">Edit</a> |
+                        <a asp-action="Delete" asp-route-id="@item.PlanDniaId">Delete</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}

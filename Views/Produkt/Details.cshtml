@@ -1,0 +1,51 @@
+@model AuthenticationApp.Models.Produkt
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>Produkt</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Nazwa)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Nazwa)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Kalorycznosc)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Kalorycznosc)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Weglowodany)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Weglowodany)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Tluszcze)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Tluszcze)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Bialka)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Bialka)
+        </dd>
+    </dl>
+</div>
+<div>
+    @if(Context.Session.GetString("Admin") != null)
+    {
+        <a asp-action="Edit" asp-route-id="@Model?.ProduktId">Edit</a> 
+    }
+    <a asp-action="Index">Back to List</a>
+</div>

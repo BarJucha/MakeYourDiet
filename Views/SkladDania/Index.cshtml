@@ -1,0 +1,45 @@
+@model IEnumerable<AuthenticationApp.Models.SkladDania>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Skład: @ViewData["Danie"]</h1>
+
+@if (Context.Session.GetString("Admin") != null)
+{
+   <p>
+    <a asp-action="Create" asp-route-danieId="@ViewData["DanieId"]">Dodaj składnik</a>
+    </p> 
+}
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Ilosc)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model=>model.Produkt.Nazwa)
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Ilosc)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Produkt.Nazwa)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.SkladDaniaId">Edit</a> |
+                <a asp-action="Delete" asp-route-id="@item.SkladDaniaId">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
+<div>
+    <a asp-controller="Danie" asp-action="Index"> Back to Dania </a>
+</div>

@@ -1,0 +1,52 @@
+@model AuthenticationApp.Models.DanieViewModel
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h1>@Model.Danie.Nazwa</h1>
+
+    <div>
+        <h4>Kaloryczność: @Model.Kalorycznosc</h4>
+        <h4>Węglowodany: @Model.Weglowodany</h4>
+        <h4>Tłuszcze: @Model.Tluszcze</h4>
+        <h4>Białko: @Model.Bialko</h4>
+    </div>
+<div>
+    <h4>Składniki</h4>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>
+                    Produkt
+                </th>
+                <th>
+                    Ilość
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+        @foreach (var item in Model.Danie.SkladDania)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Produkt.Nazwa)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Ilosc) [g]
+                </td>
+            </tr>
+        }
+        </tbody>
+    </table>
+</div>
+<div>
+    @if(Context.Session.GetString("Admin") != null)
+    {
+        <a asp-controller="SkladDania" asp-action="Index" asp-route-id="@Model.Danie.DanieId">Edit</a>
+    }
+    <a asp-action="Index">Back to List</a>
+</div>

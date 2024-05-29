@@ -1,0 +1,68 @@
+@model IEnumerable<AuthenticationApp.Models.Produkt>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Produkty</h1>
+
+@if(Context.Session.GetString("Admin") != null)
+{
+    <p>
+        <a asp-action="Create">Create New</a>
+    </p>                 
+}
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.ActionLink("Nazwa", "Index", new { sortOrder = ViewBag.NameSortParm })
+            </th>
+            <th>
+                @Html.ActionLink("Kaloryczność", "Index", new { sortOrder = ViewBag.CaloriesSortParm })
+            </th>
+            <th>
+                @Html.ActionLink("Węglowodany", "Index", new { sortOrder = ViewBag.CarbsSortParm })
+            </th>
+            <th>
+                @Html.ActionLink("Tłuszcze", "Index", new { sortOrder = ViewBag.FatsSortParm })
+            </th>
+            <th>
+                @Html.ActionLink("Białka", "Index", new { sortOrder = ViewBag.ProteinsSortParm })
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Nazwa)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Kalorycznosc)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Weglowodany)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Tluszcze)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Bialka)
+            </td>
+            <td>
+
+                <a asp-action="Details" asp-route-id="@item.ProduktId">Details</a> 
+                @if(Context.Session.GetString("Admin") != null)
+                {
+                    <a asp-action="Edit" asp-route-id="@item.ProduktId">Edit</a> 
+                    <a asp-action="Delete" asp-route-id="@item.ProduktId">Delete</a> 
+                }
+                
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

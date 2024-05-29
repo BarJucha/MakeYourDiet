@@ -1,0 +1,43 @@
+@model AuthenticationApp.Models.PlanDnia
+
+@{
+    ViewData["Title"] = "Edit";
+    var listaDan = ViewData["ListaDan"] as List<AuthenticationApp.Models.Danie>;
+}
+
+<h1>Edit</h1>
+
+<h4>Plan Dnia</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="PlanDniaId" />
+            <div class="form-group">
+                <label asp-for="DataDnia" class="control-label"></label>
+                <input asp-for="DataDnia" class="form-control" />
+                <span asp-validation-for="DataDnia" class="text-danger"></span>
+            </div>
+            <label for="Danie">Danie</label>
+                <select id="Danie" name="Danie">
+                    <option value="-1">Wybierz danie</option>
+                    @foreach (var item in listaDan)
+                    {
+                        <option value="@item.DanieId">@item.Nazwa</option>
+                    }
+                </select>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

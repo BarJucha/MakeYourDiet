@@ -1,0 +1,47 @@
+@model IEnumerable<AuthenticationApp.Models.Uzytkownik>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Użytkownicy</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Login)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Haslo)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CzyAdmin)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Login)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Haslo)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CzyAdmin)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.UzytkownikId">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.UzytkownikId">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.UzytkownikId">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
